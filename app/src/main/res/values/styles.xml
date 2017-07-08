@@ -1,0 +1,52 @@
+<resources>
+
+    <style name="AppTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="card_common">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="about_title_txt">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="support_dev_icon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="support_dev_text">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="indeterminate_progress_bar" parent="Widget.MaterialProgressBar.ProgressBar.Horizontal">
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:indeterminate">true</item>
+        <item name="mpb_useIntrinsicPadding">false</item>
+        <item name="mpb_progressStyle">horizontal</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

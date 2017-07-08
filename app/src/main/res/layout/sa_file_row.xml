@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <tuple.me.dtools.view.bar.BarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_size"
+        android:id="@+id/bar"/>
+    <ImageView
+        android:layout_width="@dimen/list_item_size"
+        android:layout_height="@dimen/list_item_size"
+        android:id="@+id/icon"
+        android:padding="@dimen/horizontal_padding"
+        android:src="@drawable/ic_doc_folder"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_size"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:maxLines="1"
+            android:padding="@dimen/md_listitem_control_margin"
+            android:id="@+id/title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/sub_title"
+            android:padding="8dp"
+            android:textColor="@color/text_light_white"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

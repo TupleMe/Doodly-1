@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="font" format="string"/>
+    </declare-styleable>
+    <attr name="popup" format="reference" />
+    <attr name="toolbar_theme" format="reference" />
+
+    <declare-styleable name="ChangeLogListView">
+        <attr name="rowLayoutId" format="reference" />
+        <attr name="rowHeaderLayoutId" format="reference" />
+        <attr name="changeLogFileResourceId" format="reference" />
+        <attr name="changeLogFileResourceUrl" format="string" />
+    </declare-styleable>
+
+    <attr name="fastscroll__style" format="reference" />
+    <declare-styleable name="fastscroll__fastScroller">
+        <attr name="fastscroll__bubbleColor" format="color" />
+        <attr name="fastscroll__handleColor" format="color" />
+        <attr name="fastscroll__bubbleTextAppearance" format="reference" />
+    </declare-styleable>
+
+</resources>

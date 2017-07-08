@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            style="@style/card_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="22dp"
+                    android:src="@drawable/ic_cpu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignLeft="@+id/percent_bar"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/percent_bar"
+                        android:gravity="center"
+                        android:text="@string/cpu" />
+
+                    <TextView
+                        android:id="@+id/percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignEnd="@+id/percent_bar"
+                        android:layout_alignRight="@+id/percent_bar"
+                        android:gravity="center"
+                        android:text="55%" />
+
+                    <tuple.me.dtools.view.bar.BarView
+                        android:id="@+id/percent_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/title"
+                        app:bar_empty_color="@color/colorPrimary" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/card_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="22dp"
+                    android:src="@drawable/ic_harddisk" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/memorytextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignLeft="@+id/memory_percent_bar"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/memory_percent_bar"
+                        android:gravity="center"
+                        android:text="@string/ram_usage" />
+
+                    <TextView
+                        android:id="@+id/memory_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignEnd="@+id/memory_percent_bar"
+                        android:layout_alignRight="@+id/memory_percent_bar"
+                        android:gravity="center"
+                        android:text="55%" />
+
+                    <tuple.me.dtools.view.bar.BarView
+                        android:id="@+id/memory_percent_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/memorytextView"
+                        app:bar_empty_color="@color/colorPrimary" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <tuple.me.dtools.view.StorageList
+            android:id="@+id/storage_list"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            style="@style/card_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="22dp"
+                        android:src="@drawable/ic_battery_charging_40" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/batterytextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignLeft="@+id/battery_percent_bar"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/battery_percent_bar"
+                            android:gravity="center"
+                            android:text="@string/battery" />
+
+                        <TextView
+                            android:id="@+id/battery_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignEnd="@+id/battery_percent_bar"
+                            android:layout_alignRight="@+id/battery_percent_bar"
+                            android:gravity="center"
+                            android:text="55%" />
+
+                        <tuple.me.dtools.view.bar.BarView
+                            android:id="@+id/battery_percent_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/batterytextView"
+                            app:bar_empty_color="@color/colorPrimary" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <tuple.me.lily.views.LeftRightTextView
+                    android:id="@+id/battery_charging_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <tuple.me.lily.views.LeftRightTextView
+                    android:id="@+id/battery_charging_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <tuple.me.lily.views.LeftRightTextView
+                    android:id="@+id/battery_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorAccent"
+            android:onClick="sendFeedBack"
+            android:text="@string/send_feedback" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorAccent"
+            android:onClick="otherApps"
+            android:text="@string/other_apps" />
+    </LinearLayout>
+</ScrollView>
+

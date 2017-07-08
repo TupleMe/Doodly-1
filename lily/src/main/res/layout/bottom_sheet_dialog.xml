@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <tuple.me.lily.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_sheet_title_height"
+        android:id="@+id/bottom_sheet_title"
+        android:textSize="15sp"
+        android:paddingLeft="@dimen/horizontal_padding"
+        android:visibility="gone"
+        android:gravity="center_vertical"/>
+    <ListView
+        android:id="@+id/bottom_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

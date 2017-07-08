@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog bulletedList="false">
+
+    <changelogversion versionName="1.1" changeDate="May 14,2017">
+        <changelogtext>First stable release</changelogtext>
+    </changelogversion>
+    <changelogversion versionName="1.0" changeDate="May 01,2017">
+        <changelogtext>Initial release.</changelogtext>
+        <changelogtext>[b]BETA[\b] version</changelogtext>
+    </changelogversion>
+</changelog>

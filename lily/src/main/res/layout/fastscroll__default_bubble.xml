@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:minWidth="64dp"
+    android:maxWidth="150dp"
+    android:maxLines="1"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:layout_height="64dp"
+    android:gravity="center"
+    android:textSize="24sp"
+    android:background="@drawable/fastscroll__default_bubble"
+    android:visibility="invisible"
+    android:layout_margin="1dp"
+    tools:text="A"
+    tools:visibility="visible" />

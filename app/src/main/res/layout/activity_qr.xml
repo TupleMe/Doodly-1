@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+        android:id="@+id/qrdecoderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/history"
+        app:fabSize="normal"
+        android:src="@drawable/ic_history_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/horizontal_padding"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/torch"
+        app:fabSize="normal"
+        android:src="@drawable/ic_alert_circle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@+id/history"
+        android:layout_toLeftOf="@+id/history"
+        android:layout_toStartOf="@+id/history" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/open_file"
+        app:fabSize="normal"
+        android:src="@drawable/ic_folder_open"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal_padding"
+        android:layout_marginRight="@dimen/horizontal_padding"
+        android:layout_alignTop="@+id/torch"
+        android:layout_toStartOf="@+id/torch" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_sheet_item_height">
+    <ImageView
+        android:id="@+id/bottom_item_icon"
+        android:layout_width="@dimen/bottom_sheet_icon_size"
+        android:layout_height="@dimen/bottom_sheet_icon_size"
+        android:layout_marginLeft="@dimen/horizontal_padding"
+        android:layout_marginRight="@dimen/horizontal_padding"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <tuple.me.lily.views.CustomTextView
+        android:id="@+id/bottom_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_sheet_item_height"
+        android:layout_toEndOf="@+id/bottom_item_icon"
+        android:layout_toRightOf="@+id/bottom_item_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/horizontal_padding"
+        android:text="gokkk"
+        android:textSize="17dp"
+        app:font="REGULAR" />
+</RelativeLayout>
